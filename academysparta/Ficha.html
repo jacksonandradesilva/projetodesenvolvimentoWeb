@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloFichadoAlunos.css">
+    
+    <title>Ficha do Aluno</title>
+
+</head>
+
+<body>
+    <header>ACADEMIA SPARTA</header>
+  
+    <nav id="fachada">
+      <button><a href="index.html">TELA INICIAL</a></button>
+      <button><a href="CadastrodeAlunos.html">CADASTRO DE ALUNO</a></button>
+      
+        
+    </nav>
+
+    <div id="fichadoaluno">FICHA DE TREINO</div>
+
+    <form method="POST" action="AdicionarFicha_action.php">
+
+
+        <fieldset>
+
+            <legend><p>Aluno</p></legend>
+            <label>
+              Nome: <br/>
+              <input type="text"id="nome" name="name"/>
+            </label><br/><br/>
+            <label>
+              Professor(a): <br/>
+              <input type="text" name="professor"/>
+            </label><br/><br/>
+            <label>
+              Data Avaliação: <br/>
+              <input type="date" name="data_avaliacao"/>
+            </label><br/><br/>
+            <label>
+              Data Reavaliação: <br/>
+              <input type="date" name="data_reavaliacao"/>
+            </label><br/><br/>
+            <label>
+              E-mail: <br/>
+              <input type="email" name="email"/>
+            </label><br/><br/>
+        
+        </fieldset>
+
+        <fieldset>
+
+            <legend><p>Ficha de Treino</p></legend>
+         <ul for="Treino A">Treino A:</ul>
+         <textarea name="treino_a" cols="60" rows="6"></textarea>
+         <ul for="Treino B">Treino B:</ul>
+         <textarea name="treino_b" cols="60" rows="6"></textarea>
+         <ul for="Treino C">Treino C:</ul>
+         <textarea name="treino_c" cols="60" rows="6"></textarea>
+         <ul for="Treino D">Treino D:</ul>
+         <textarea name="treino_d" cols="60" rows="6"></textarea>
+         
+             
+           </fieldset>
+         
+           <fieldset>
+            <legend><p>Observações</p></legend>
+            <textarea name="observacao" cols="200" rows="10"></textarea>
+          </fieldset>
+    
+    <fieldset>
+    <button type="submit" onclick="cadastrar()">Cadastrar </button>
+    <button type="reset"> Limpar Mensagem </button>
+  </fieldset>
+
+
+
+</form>   
+<img src="spartalog.png"> 
+        alt text="EXERCITE-SE"
+        width=“900”
+        height=“800”
+</body>
+<footer>
+    Criado por:
+    EQUIPE DE DESENVOLVIMENTO WEB
+    JACKSON ANDRADE / ANTHONY PETERSON
+</footer>
+
+</html>

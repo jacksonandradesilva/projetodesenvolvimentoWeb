@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloCadastroAlunos.css">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+
+    <header>ACADEMIA SPARTA</header>
+   
+
+    <nav id="fachada">
+      <button><a href="index.html">TELA INICIAL</a></button>
+      <button><a href="ListaDados.php">ALUNOS CADASTRADOS</a></button>
+      <button><a href="Ficha.html">FICHA DE ALUNO</a></button>
+      <button><a href="ListaDadosFicha.php">FICHA DE TREINO</a></button>
+     
+    </nav>
+   
+<div id="cadastro">Cadastro do Aluno</div>
+
+  <nav>
+    
+</nav>
+
+
+<form method="POST" action="adicionar_action.php">
+
+        <fieldset>
+
+            <legend><p>Cadastro do Aluno</p></legend>
+            <label>
+              NOME:<br/>
+              <input type="text"id="nomeid" name="name"/>
+            </label><br/>
+            <label>
+              DATA NASCIMENTO: <br/>
+              <input type="date" name="data_nascimento"/>
+            </label><br/>
+            <label>
+              DATA CADASTRO: <br/>
+              <input type="date" name="data_cadastramento"/>
+            </label><br/>
+            <label>
+              CPF: <br/>
+              <input type="text" name="cpf"/>
+            </label><br/>
+            <label>
+              E-MAIL: <br/>
+              <input type="email" name="email"/>
+            </label><br/>
+            <label>
+              ENDEREÇO:<br/>
+              <input type="text" name="endereco"/>
+            </label><br/>
+            <label>
+              TELEFONE: <br/>
+              <input type="text" name="telefone"/>
+            </label><br/>
+            <label>
+              MODALIDADE: <br/>
+              <input type="text" name="modalidade"/>
+            </label>
+        </fieldset>
+        <fieldset>
+          <legend><p>Observações</p></legend>
+          <textarea name="descricao" cols="200" rows="1"></textarea>
+      
+    <button type="submit" onclick="cadastrar()">Cadastrar </button>
+    <button type="reset"> Limpar Mensagem </button>
+  </fieldset>
+</form> 
+</body>
+
+<script>
+  function cadastrar() {
+
+var nome = document.getElementById("nomeid");
+
+if (nome.value != "") {
+    alert('Obrigado sr(a) ' + nome.value + '  Cadastro Realizado com Sucesso!');
+}
+
+}
+</script>
+
+<footer>
+    EQUIPE DE DESENVOLVIMENTO WEB:
+    JACKSON ANDRADE / ANTHONY PETERSON
+    <br>   
+</footer>
+</html>
